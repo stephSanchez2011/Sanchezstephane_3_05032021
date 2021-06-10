@@ -6,23 +6,26 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" media="screen" href="assets/css/mobile.css" type="text/css"/>
         <link rel="stylesheet" media="screen" href="assets/css/menuMobile.css" type="text/css"/>
-        <link rel="stylesheet" media="screen" href="assets/css//backgroundCss/backgroundFrancaise.css" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="assets/css/backgroundCss/backgroundFrancaise.css" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
         <title>ohmyfood - À la française</title>
     </head>
     <body>
         <header>
+            <div id='return'>
+                <a href="accueil.html"><i class="fas fa-arrow-left"></i></a>
+            </div>            
             <img src="assets/img/logo/ohmyfood@2x.svg" alt="ohmyfood logo" id="logo">
         </header>
         <main>
             <section id="restaurant" class='menu'>
-                <h2 id="restaurant-title" class='title'>À la française</h2>
+                <h2 id="restaurant-title" class='title'></h2>
                 <h2 class="dishType">ENTRÉES</h2>
                 <hr/>
-                <div id="restaurants">
-                    <div class='dish-card'>
-                        <figure class="figure-restaurant">
-                            <figcaption class="detail-restaurant">
+                <div class="restaurants">
+                    <div class='dish-card dish-card-1'>
+                        <div class="figure-restaurant">
+                            <div class="detail-restaurant">
                                 <div class="card-info">
                                     <h3 class="card-title">Tartare de poulpe acidulé</h3>
                                     <p class="card-more">Aux zestes d'orange</p>
@@ -30,25 +33,32 @@
                                 <div class="card-price">
                                     <p>25€</p>
                                 </div>
-                            </figcaption>
-                        </figure>
+                                <div class='add-to-cart'>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class='dish-card'>
-                        <figure class="figure-restaurant">
-                            <figcaption class="detail-restaurant">
+                    <div class='dish-card dish-card-2'>
+                        <div class="figure-restaurant">
+                            <div class="detail-restaurant">
                                 <div class="card-info">
                                     <h3 class="card-title">Velouté de légumes d'antan</h3>
                                     <p class="card-more">Carotte, panais, topinambour</p>
                                 </div>
                                 <div class="card-price">
                                     <p>35€</p>
+                                </div>  
+                                <div class='add-to-cart'>
+                                    <i class="fas fa-check-circle"></i>
                                 </div>
-                            </figcaption>
-                        </figure>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class='dish-card'>
-                        <figure class="figure-restaurant">
-                            <figcaption class="detail-restaurant">
+                    <div class='dish-card dish-card-3'>
+                        <div class="figure-restaurant">
+                            <div class="detail-restaurant">
                                 <div class="card-info">
                                     <h3 class="card-title">Soupe à l'oignon</h3>
                                     <p class="card-more">Revisitée</p>
@@ -56,16 +66,19 @@
                                 <div class="card-price">
                                     <p>20€</p>
                                 </div>
-                            </figcaption>
-                        </figure>
+                                <div class='add-to-cart'>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <h2 class="dishType">PLATS</h2>
                 <hr/>
-                <div id="restaurants">
-                    <div class='dish-card'>
-                        <figure class="figure-restaurant">
-                            <figcaption class="detail-restaurant">
+                <div class="restaurants">
+                    <div class='dish-card dish-card-4'>
+                        <div class="figure-restaurant">
+                            <div class="detail-restaurant">
                                 <div class="card-info">
                                     <h3 class="card-title">Coquilles Saint-Jacques</h3>
                                     <p class="card-more">Accompagnées d'une purée de panais</p>
@@ -73,12 +86,15 @@
                                 <div class="card-price">
                                     <p>40€</p>
                                 </div>
-                            </figcaption>
-                        </figure>
+                                <div class='add-to-cart'>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class='dish-card'>
-                        <figure class="figure-restaurant">
-                            <figcaption class="detail-restaurant">
+                    <div class='dish-card dish-card-5'>
+                        <div class="figure-restaurant">
+                            <div class="detail-restaurant">
                                 <div class="card-info">
                                     <h3 class="card-title">Magret de canard</h3>
                                     <p class="card-more">Et parmentier de pommes de terre</p>
@@ -86,12 +102,15 @@
                                 <div class="card-price">
                                     <p>35€</p>
                                 </div>
-                            </figcaption>
-                        </figure>
+                                <div class='add-to-cart'>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class='dish-card'>
-                        <figure class="figure-restaurant">
-                            <figcaption class="detail-restaurant">
+                    <div class='dish-card dish-card-6'>
+                        <div class="figure-restaurant">
+                            <div class="detail-restaurant">
                                 <div class="card-info">
                                     <h3 class="card-title">Pigeonneau d’Ille-et-Vilaine</h3>
                                     <p class="card-more">Sur son lit de gnocchis aux légumes</p>
@@ -99,16 +118,19 @@
                                 <div class="card-price">
                                     <p>44€</p>
                                 </div>
-                            </figcaption>
-                        </figure>
+                                <div class='add-to-cart'>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <h2 class="dishType">DESSERTS</h2>
                 <hr/>
-                <div id="restaurants">
-                    <div class='dish-card'>
-                        <figure class="figure-restaurant">
-                            <figcaption class="detail-restaurant">
+                <div class="restaurants">
+                    <div class='dish-card dish-card-7'>
+                        <div class="figure-restaurant">
+                            <div class="detail-restaurant">
                                 <div class="card-info">
                                     <h3 class="card-title">Pétales de violettes glacés</h3>
                                     <p class="card-more">Et purée de noisettes</p>
@@ -116,12 +138,15 @@
                                 <div class="card-price">
                                     <p>18€</p>
                                 </div>
-                            </figcaption>
-                        </figure>
+                                <div class='add-to-cart'>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class='dish-card'>
-                        <figure class="figure-restaurant">
-                            <figcaption class="detail-restaurant">
+                    <div class='dish-card dish-card-8'>
+                        <div class="figure-restaurant">
+                            <div class="detail-restaurant">
                                 <div class="card-info">
                                     <h3 class="card-title">Fondant au chocolat</h3>
                                     <p class="card-more">Revisité</p>
@@ -129,12 +154,15 @@
                                 <div class="card-price">
                                     <p>22€</p>
                                 </div>
-                            </figcaption>
-                        </figure>
+                                <div class='add-to-cart'>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class='dish-card'>
-                        <figure class="figure-restaurant">
-                            <figcaption class="detail-restaurant">
+                    <div class='dish-card dish-card-9'>
+                        <div class="figure-restaurant">
+                            <div class="detail-restaurant">
                                 <div class="card-info">
                                     <h3 class="card-title">Millefeuille croustillant</h3>
                                     <p class="card-more">Myrtilles et pâte d’amande</p>
@@ -142,8 +170,11 @@
                                 <div class="card-price">
                                     <p>23€</p>
                                 </div>
-                            </figcaption>
-                        </figure>
+                                <div class='add-to-cart'>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <form id="explorer" action="#" method="get">
