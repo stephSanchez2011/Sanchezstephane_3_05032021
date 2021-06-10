@@ -1,6 +1,4 @@
-@media only screen 
-    and (min-width : 320px) 
-    and (max-width : 768px) {
+
         body
         {
             width: 100%;
@@ -122,6 +120,7 @@
         .add-to-cart {
             color: white;
             background: #99E2D0;
+            overflow: hidden;
         }
 
         .add-to-cart { width: 0px}
@@ -178,17 +177,8 @@
         }
 
         #explorer-button { width: 50%; }
-        
-    }
 
-    @media only screen 
-    and (min-width : 375px) 
-    and (max-width : 768px) {
-        .detail-restaurant:hover .card-info {
-            width: 65%!important;
-            transition: width 1.2s ease-in-out;
-        }
-    }
+
 
     @media only screen 
     and (min-width : 375px) 
@@ -200,5 +190,18 @@
 
         .detail-restaurant:hover .add-to-cart {
             margin-left: 20px;
+        }
+    }
+
+    @media only screen 
+    and (min-width : 425px) 
+    and (max-width : 425px) {
+        .detail-restaurant:hover .add-to-cart .fa-check-circle 
+        {
+            padding: 20px 35px  !important;
+        }
+
+        .detail-restaurant:hover .add-to-cart {
+            margin-left: 30px;
         }
     }
