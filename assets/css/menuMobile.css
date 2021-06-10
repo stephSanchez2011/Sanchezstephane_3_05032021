@@ -4,10 +4,9 @@
 body
 {
     width: 100%;
-    background: url(../img/restaurants/palette-du-gout.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: 55px;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position-y: 55px!important;
 }
 main
 {
@@ -21,10 +20,12 @@ main
 #return
 {
     position: absolute;
-    left: 15px;
-    top: 15px;
+    left: 25px;
+    top: 18px;
+    transform: scale(1.5);
+    
 }
-
+#return a { color: #202020!important;}
 
 /*-------------------------------------*/
 /*-------------RESTAURANT--------------*/
