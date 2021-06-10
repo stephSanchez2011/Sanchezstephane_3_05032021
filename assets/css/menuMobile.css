@@ -1,185 +1,190 @@
-
-        body
-        {
-            width: 100%;
-            background: url(../img/restaurants/palette-du-gout.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position-y: 55px;
-        }
-        main
-        {
-            margin: 170px 0 0 0;
-        }
-        #return
-        {
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-        #restaurant
-        {
-            flex-direction: column!important;
-        }
-        .restaurants
-        {
-            margin: auto;
-        }
-        #restaurant-title { text-align: center!important; }
-        .menu
-        {
-            border-top-left-radius: 35px!important;
-            border-top-right-radius: 35px!important;
-        }
-
-        .dish-card
-        {
-            width: 100%;
-            background-color: white;
-            border-radius: 15px;
-            margin: 0 0 15px 0;
-            font-size: 13.4px;
-        }
-
-        .dish-card-1 { animation: fadein 1s ease-in; }
-        .dish-card-2 { animation: fadein 2s ease-in; }
-        .dish-card-3 { animation: fadein 3s ease-in; }
-        .dish-card-4 { animation: fadein 3s ease-in; }
-        .dish-card-5 { animation: fadein 4s ease-in; }
-        .dish-card-6 { animation: fadein 5s ease-in; }
-        .dish-card-7 { animation: fadein 6s ease-in; }
-        .dish-card-8 { animation: fadein 7s ease-in; }
-        .dish-card-9 { animation: fadein 8s ease-in; }
-        @keyframes fadein {
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
-        }
-
-        .dishType
-        {
-            font-size: 16px;
-            font-weight: 400;
-            text-align: start!important;
-            margin-left: 20px;
-        }
-        hr 
-        {
-            margin-inline-start: 20px;
-            width: 40px;
-            margin-block-start: -0.5em;
-            border: 2px solid #99E2D0;
-            border-bottom: none;
-            border-left: none;
-            border-right: none;
-        }
-        .card-info
-        {
-            width: 85%;
-        }
-        .card-more
-        {
-            margin: 0 0 0 10px;
-            font-size: 12px;
-            max-width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .card-title {
-            max-width: 90%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .card-price p
-        {
-            margin-block-start: 0;
-            margin-block-end: 0;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            margin-top: 15px;
-        }
-        .card-price
-        {
-            width: 30px;
-            font-size: 14px;
-            font-weight: bold;
-
-        }
-        .card-add-to-cart
-        {
-            width: 50px;
-            font-size: 14px;
-            font-weight: bold;
-            margin: auto!important;
-        }
-        .add-to-cart {
-            color: white;
-            background: #99E2D0;
-            overflow: hidden;
-        }
-
-        .add-to-cart { width: 0px}
-        .add-to-cart .fas { transform: scale(0);}
-        .detail-restaurant
-        {
-            margin: 0px!important;
-            display: flex;
-            align-items: center;
-            height: 50px;
-        }
-        .detail-restaurant:hover .add-to-cart {
-            border-bottom-right-radius: 15px;
-            height: 50px;
-            transform: scale(1);
-            width: 23%;
-            border-top-right-radius: 15px;
-            transition: width 1.2s ease-in-out;
-            margin-left: 15px;
-        }
-        .detail-restaurant:hover .add-to-cart .fa-check-circle 
-        {
-            animation: transform 0.5 ease-in-out;
-            margin: auto;
-            animation: spin 1s linear 1;
-            padding: 20px 25px;
-            transform: scale(1);
-        }
-        @keyframes transform { 
-            from { 
-                transform: scale(0); 
-            } to { 
-                transform: scale(1);
-            }
-        }
-        @keyframes width { 
-            from { 
-                width: 20%; 
-            } to { 
-                width: 23%; 
-            }
-        }
-        @keyframes spin { 
-            from { 
-                transform: rotate(0deg); 
-            } to { 
-                transform: rotate(360deg); 
-            }
-        }
-
-        .detail-restaurant:hover .card-info {
-            width: 65%!important;
-            transition: width 1.1s ease-in-out;
-        }
-
-        #explorer-button { width: 50%; }
+/*-------------------------------------*/
+/*--------------INIT PAGE--------------*/
+/*-------------------------------------*/
+body
+{
+    width: 100%;
+    background: url(../img/restaurants/palette-du-gout.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 55px;
+}
+main
+{
+    margin: 170px 0 0 0;
+}
 
 
+/*-------------------------------------*/
+/*---------------HEADER----------------*/
+/*-------------------------------------*/
+#return
+{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
 
+
+/*-------------------------------------*/
+/*-------------RESTAURANT--------------*/
+/*-------------------------------------*/
+
+#restaurant
+{
+    flex-direction: column!important;
+}
+.restaurants
+{
+    margin: auto;
+}
+#restaurant-title { text-align: center!important; }
+.menu
+{
+    border-top-left-radius: 35px!important;
+    border-top-right-radius: 35px!important;
+}
+
+/*-------------------------------------*/
+/*-------------DISH INFO---------------*/
+/*-------------------------------------*/
+
+
+.dish-card
+{
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 0 15px 0;
+    font-size: 13.4px;
+}
+
+
+.dishType
+{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start!important;
+    margin-left: 20px;
+}
+hr 
+{
+    margin-inline-start: 20px;
+    width: 40px;
+    margin-block-start: -0.5em;
+    border: 2px solid #99E2D0;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+/*-------------------------------------*/
+/*-------------CARD INFO---------------*/
+/*-------------------------------------*/
+.card-info
+{
+    width: 85%;
+}
+.card-more
+{
+    margin: 0 0 0 10px;
+    font-size: 12px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-title {
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-price p
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 15px;
+}
+.card-price
+{
+    width: 30px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.card-add-to-cart
+{
+    width: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto!important;
+}
+
+#explorer-button { width: 50%; }
+/*-------------------------------------*/
+/*-------------ADD-TO-CART-------------*/
+/*-------------------------------------*/
+.add-to-cart {
+    color: white;
+    background: #99E2D0;
+    overflow: hidden;
+}
+
+.add-to-cart { width: 0px}
+.add-to-cart .fas { transform: scale(0);}
+/*-------------------------------------*/
+/*--------------ANIMATION--------------*/
+/*-------------------------------------*/
+
+.dish-card-1 { animation: fadein 1s ease-in; }
+.dish-card-2 { animation: fadein 2s ease-in; }
+.dish-card-3 { animation: fadein 3s ease-in; }
+.dish-card-4 { animation: fadein 3s ease-in; }
+.dish-card-5 { animation: fadein 4s ease-in; }
+.dish-card-6 { animation: fadein 5s ease-in; }
+.dish-card-7 { animation: fadein 6s ease-in; }
+.dish-card-8 { animation: fadein 6s ease-in; }
+.dish-card-9 { animation: fadein 6s ease-in; }
+
+       
+.detail-restaurant
+{
+    margin: 0px!important;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.detail-restaurant:hover .add-to-cart {
+    border-bottom-right-radius: 15px;
+    height: 50px;
+    transform: scale(1);
+    width: 23%;
+    border-top-right-radius: 15px;
+    transition: width 1.2s ease-in-out;
+    margin-left: 15px;
+}
+.detail-restaurant:hover .add-to-cart .fa-check-circle 
+{
+    animation: transform 0.5 ease-in-out;
+    margin: auto;
+    animation: spin 1s linear 1;
+    padding: 20px 25px;
+    transform: scale(1);
+}
+
+.detail-restaurant:hover .card-info {
+    width: 65%!important;
+    transition: width 1.1s ease-in-out;
+}
+
+
+
+/*-----------------------------------------*/
+/*-----------MEDIA MOBILE M & L------------*/
+/*-----------------------------------------*/
     @media only screen 
     and (min-width : 375px) 
     and (max-width : 425px) {
@@ -203,5 +208,39 @@
 
         .detail-restaurant:hover .add-to-cart {
             margin-left: 30px;
+        }
+    }
+
+
+/*------------------------------*/
+/*----------KEYFRAME------------*/
+/*------------------------------*/
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @keyframes transform { 
+        from { 
+            transform: scale(0); 
+        } to { 
+            transform: scale(1);
+        }
+    }
+    @keyframes width { 
+        from { 
+            width: 20%; 
+        } to { 
+            width: 23%; 
+        }
+    }
+    @keyframes spin { 
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(360deg); 
         }
     }
