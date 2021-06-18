@@ -1,0 +1,30 @@
+@media only screen 
+and (min-width : 1028px) {
+
+    .dish-card {
+        width: 60%!important;
+        border-radius: 15px;
+        margin: 0 0 15px 0;
+        font-size: 13.4px;
+    }
+
+
+    .dishType
+    {
+        margin-left: 290px;
+    }
+    hr 
+    {
+        margin-inline-start: 290px;
+    }
+    .detail-restaurant:hover .add-to-cart .fa-check-circle 
+    {
+        padding: 20px 45%  !important;
+    }
+    .card-title { width: 255px;}
+
+    .card-price { width: 95px!important ; text-align: end!important;}
+    .detail-restaurant:hover .add-to-cart {
+        margin-left: 7%!important;
+    }
+}
