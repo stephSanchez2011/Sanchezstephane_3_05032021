@@ -11,6 +11,8 @@
         <title>ohmyfood</title>
     </head>
     <body>
+        <div class='loading'></div>
+        <div class="lds-dual-ring"></div>
         <header>
             <img src="assets/img/logo/ohmyfood@2x.svg" alt="ohmyfood logo" id="logo">
         </header>
@@ -49,63 +51,73 @@
                 </div>
             </section>
             <section id="restaurant">
-                <h2 id="restaurant-title">Restaurant</h2>
+                <div class='title-width'>
+                    <h2 id="restaurant-title">Restaurant</h2>
+                </div>
                 <div class="restaurants">
                     <div class='restaurant-card'>
-                        <a href="/menuPalette.html">
-                            <figure class="figure-restaurant">
+                        <div class="figure-restaurant">
+                            <a href="/menuPalette.html">
                                 <img src="assets/img/restaurants/palette-du-gout.jpg"  alt="Restaurant: La palette du goût">
-                                <figcaption class="detail-restaurant">
+                            </a>
+                            <div class="detail-restaurant">
+                                <a href="/menuPalette.html">
                                     <div class="card-info">
                                         <h3 class="card-title">La palette du goût</h3>
                                         <p class="card-location">Ménilmontant</p>
                                     </div>
-                                    <i class="far fa-heart card-heart"></i>
-                                </figcaption>
-                            </figure>
-                        </a>
+                                </a>
+                                <i class="far fa-heart card-heart"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class='restaurant-card'>
-                        <a href="/menuNote.html">
-                            <figure class="figure-restaurant">
+                        <div class="figure-restaurant">
+                            <a href="/menuNote.html">
                                 <img src="assets/img/restaurants/note-enchante.jpg"  alt="Restaurant: La note enchantée">
-                                <figcaption class="detail-restaurant">
+                            </a>
+                            <div class="detail-restaurant">
+                                <a href="/menuNote.html">
                                     <div class="card-info">
                                         <h3 class="card-title">La note enchantée</h3>
                                         <p class="card-location">Charonne</p>
                                     </div>
-                                    <i class="far fa-heart card-heart"></i>
-                                </figcaption>
-                            </figure>
-                        </a>
+                                </a>
+                                <i class="far fa-heart card-heart"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class='restaurant-card'>
-                        <a href="/menuFrancaise.html">
-                            <figure class="figure-restaurant">
+                        <div class="figure-restaurant">
+                            <a href="/menuFrancaise.html">
                                 <img src="assets/img/restaurants/la-francaise.jpg"  alt="Restaurant: À la française">
-                                <figcaption class="detail-restaurant">
+                                </a>
+                            <div class="detail-restaurant">
+                                <a href="/menuFrancaise.html">
                                     <div class="card-info">
                                         <h3 class="card-title">À la française</h3>
                                         <p class="card-location">Cité Rouge</p>
                                     </div>
-                                    <i class="far fa-heart card-heart"></i>
-                                </figcaption>
-                            </figure>
-                        </a>
+                                </a>
+                                <i class="far fa-heart card-heart fav"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class='restaurant-card'>
-                        <a href="/menuDelice.html">
-                            <figure class="figure-restaurant">
+                        <div class="figure-restaurant">
+                            <a href="/menuDelice.html">
                                 <img src="assets/img/restaurants/delice-des-sens.jpg"  alt="Restaurant: Le délice des sens">
-                                <figcaption class="detail-restaurant">
+                            </a>
+                            <div class="detail-restaurant">
+                                <a href="/menuDelice.html">
                                     <div class="card-info">
                                         <h3 class="card-title">Le délice des sens</h3>
                                         <p class="card-location">Folie-Méricourt</p>
                                     </div>
-                                    <i class="far fa-heart card-heart"></i>
-                                </figcaption>
-                            </figure>
-                        </a>
+                                </a>
+                                <i class="far fa-heart card-heart fav"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>    
@@ -114,12 +126,11 @@
             <section id='footer'>
                 <h2 id="footer-title">ohmyfood</h2>
                 <div class='footer-flex'>
-                    <i class="fas fa-utensils footer-icon"></i>
-                    <h3>Proposer un restaurant</h3>
+                    <h3><i class="fas fa-utensils footer-icon"></i>Proposer un restaurant</h3>
                 </div>
                 <div class='footer-flex'>
-                    <i class="fas fa-hands-helping footer-icon"></i>
-                    <h3>Devenir partenaire</h3>
+                    
+                    <h3><i class="fas fa-hands-helping footer-icon partner"></i>Devenir partenaire</h3>
                 </div>
                 <div class='footer-down'>
                     <h3>Mentions légales</h3>

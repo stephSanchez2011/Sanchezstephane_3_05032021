@@ -5,8 +5,8 @@
 -------------------*/
 body
 {
-    
     margin: auto;
+    
 }
 
 .padded-left { padding-left: 15px;}
@@ -20,6 +20,71 @@ body
     font-family: 'Roboto';
 }
 
+/*------------------------
+        SPINNER
+--------------------------*/
+
+.loading 
+{
+    transform: scale(0);
+    width: 100%;
+    height: 275%;
+    background-color: white;
+    position: absolute;
+    animation: itemAppear 4s linear 1;
+    animation-fill-mode: unset;
+}
+@keyframes itemAppear {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        z-index: -10;
+        transform: scale(0);
+    }
+  }
+  
+.lds-dual-ring 
+{
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 115px;
+    top: 280px;
+}
+.lds-dual-ring:before 
+{
+    transform: scale(0);
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #9356DC #99E2D0 #FF79DA #99E2D0;
+    animation: lds-dual-ring 3s linear 1;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        display: none;
+    }
+}
 
 
 /*-------------------------
@@ -34,6 +99,7 @@ header
 {
     margin: 10px 0 10px 0;
 } 
+
 /*-------------------------
         location
 ---------------------------*/
@@ -53,6 +119,7 @@ header
     font-weight: 600!important;
     color: #4b4b4b;
 }
+
 /*-------------------------
         First Section
 ---------------------------*/
@@ -63,8 +130,7 @@ header
 #main-section
 {
     
-    min-width: 320px;
-    max-width: 425px;
+    width: 100%px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -86,10 +152,13 @@ header
     border: none;
     color: white;
     background: linear-gradient(#FF79DA ,#9356DC);
-    font: 13px 'Roboto'!important;
+    font: 13px 'Roboto';
     box-shadow: 0px 0px 5px #878686;
 }
-
+#explorer-button:hover
+{
+    box-shadow: 0px 0px 11px 5px #878686
+}
 #mainText
 {
     font-size: 26px;
@@ -103,10 +172,10 @@ header
     color: gray;
     margin: 5px;
 }
+
 /*-------------------------
         Filter
 ---------------------------*/
-
 #how-it-works
 {
     width: 100%;
@@ -161,8 +230,7 @@ header
     background-color: #9356DC;
     color: white;
     padding: 2px;
-    position: absolute;
-    left: 10px;
+    margin-left: -15px;
 }
 .explain-number
 {
@@ -173,8 +241,6 @@ header
 /*-------------------------
         Restaurant
 ---------------------------*/
-
-
 #restaurant
 {
     display: flex;
@@ -183,6 +249,7 @@ header
     justify-content: center;
     flex-flow: wrap;
 }
+.title-width { width: 100%;}
 .restaurant-card a
 {
     text-decoration: none;
@@ -205,7 +272,7 @@ header
 {
     margin: 0 0 0 10px;
 }
-
+.card-title { width: 170px;}
 .restaurant-card
 {
     width: 90%;
@@ -232,40 +299,53 @@ header
     display: flex;
     align-items: center;
 }
+.fa-heart {
+    background-color: #FFF;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+.fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+    color: #FF79DA;
+    cursor: pointer;
+}
 
 /*-------------------------
         Footer
 ---------------------------*/
-    
-    footer
-    {
-        display: flex;
-        justify-content: center;
-        align-items: inherit;
-        background-color: #353535!important;
-        min-height: 190px;
-    }
-    #footer
-    {
-        width: 90%;
-        color: white;
-    }
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+    background-color: #353535!important;
+    min-height: 190px;
+}
+#footer
+{
+    width: 90%;
+    color: white;
+}
 
-    #footer-title { font-weight: 400;}
+#footer-title { font-weight: 400;}
 
-    .footer-icon { margin-right: 10px;}
+.footer-icon { margin-right: 10px;}
 
-    .footer-flex
-    {
-        display: inline-flex;
-        align-items: center;
-    }
-    .footer-down h3
-    {
-        font-weight: normal!important;
-    }
-    .footer-down a 
-    {
-        text-decoration: none;
-        color: white;
-    }
+.footer-flex
+{
+    display: inline-flex;
+    align-items: center;
+}
+.footer-down h3
+{
+    font-weight: normal!important;
+}
+.footer-down a 
+{
+    text-decoration: none;
+    color: white;
+}
