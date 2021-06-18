@@ -298,6 +298,8 @@ header
     display: flex;
     align-items: center;
 }
+.detail-restaurant a { width: 76%!important;}
+
 .fa-heart {
     background-color: #FFF;
     color: white;

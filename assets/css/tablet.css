@@ -1,3 +1,110 @@
-@media (min-width: 768px) and (max-width: 1024px) {
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
-}
+@media (min-width: 768px) and (max-width: 1024px) 
+    {
+/*-------------------------
+        Import
+---------------------------*/
+
+/*-------------------------
+        Spinner
+---------------------------*/
+        .lds-dual-ring 
+        {
+            left: 48%!important;
+            top: 35%!important;
+        }
+/*-------------------------
+        First Section
+---------------------------*/
+
+        #explorer
+        {
+            width: 100%;
+            display: flex;
+            justify-content:center;
+        }
+        #explorer-button
+        {
+            width: 40%!important;
+            height: 60px!important;
+            margin: 30px 0 35px 0 !important;
+            border-radius: 20px;
+            font-size: 25px!important;
+            font-family: 'Roboto'!important;
+        }
+        #explorer-button:hover
+        {
+            box-shadow: 0px 0px 11px 5px #878686
+        }
+        #mainText
+        {
+            width: 100%;
+            font-size: 26px;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0 10px 0;
+        }
+        #secondText
+        {
+            text-align: center;
+            color: gray;
+            margin: 5px;
+        }
+
+/*-------------------------
+        Filter
+---------------------------*/
+        #explains { width: 80%!important; }
+        .individual-explain { width: 85%; margin: 20px auto!important;}
+        .text-explain { width: 80%;}
+        .ico-explain { margin: 0px 5px 0 30px!important;}
+/*-------------------------
+        Restaurant
+---------------------------*/
+        #restaurant-title
+        {
+            width: 100%!important;
+            text-align: center;
+        }
+        .restaurants
+        {
+            width: 100%!important;
+        }
+        .restaurant-card 
+        {
+            width: 40%!important;
+            margin: 0px 30px 15px 30px!important;
+        }
+        .detail-restaurant a { width: 76%!important;}
+/*-------------------------
+        Footer
+---------------------------*/
+        footer
+        {
+            display: flex;
+            justify-content: center;
+            align-items: inherit;
+            background-color: #353535!important;
+            min-height: 190px;
+        }
+        #footer
+        {
+            width: 92%;
+            color: white;
+        }
+        .footer-icon { margin: 0 10px 0 0!important;  }
+        .footer-icon.partner { margin: 0 5px 0 0!important; }
+        #footer-title { text-align: center; }
+        .footer-icon { margin-right: 10px; }
+        .footer-flex { width: 100%!important; }
+        .footer-down { text-align: center!important; }
+        .footer-flex h3 
+        { 
+            width: 100%!important;
+            text-align: center!important;
+            margin-left: -10px;
+        }
+        
+    }
