@@ -73,11 +73,11 @@ main
     font-size: 16px;
     font-weight: 400;
     text-align: start;
-    margin-left: 20px;
+    margin-left: 6%;
 }
 hr 
 {
-    margin-inline-start: 20px;
+    margin-inline-start: 6%;
     width: 40px;
     margin-block-start: -0.5em;
     border: 2px solid #99E2D0;

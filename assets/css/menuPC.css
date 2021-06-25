@@ -11,11 +11,11 @@ and (min-width : 1028px) {
 
     .dishType
     {
-        margin-left: 290px;
+        margin-left: 20%;
     }
     hr 
     {
-        margin-inline-start: 290px;
+        margin-inline-start: 20%;
     }
     .detail-restaurant:hover .add-to-cart .fa-check-circle 
     {
