@@ -33,13 +33,14 @@ main
 
 #restaurant
 {
+    position: relative;
     flex-direction: column;
 }
 .restaurants
 {
     margin: auto;
 }
-#restaurant-title { text-align: center; }
+#restaurant-title { text-align: center; width: 100%; }
 .menu
 {
     border-top-left-radius: 35px;
@@ -47,12 +48,38 @@ main
 }
 
 
-.fa-heart {
-    background-color: #f5f5f5;
-    color: whitesmoke;
+.card-heart
+{
+    position: absolute;
+    right: 11%;
+    top: 3%;
 }
+.card-heart-full
+{
+    background-clip: text!important;
+    -webkit-background-clip: text!important;
+    color: transparent;
+    right: 11%;
+    top: 3%;
+    position: absolute;
+}
+.card-heart-full:hover
+{
+    animation: colorHeart 2s ease-in;
+    animation-fill-mode: forwards;
 
-
+}
+@keyframes colorHeart {
+    0% {
+        background: linear-gradient( #ddc9f6, #fdbdeb);
+    }
+    50% {
+        background: linear-gradient( #be8ff8, #f873d2);
+    }
+    100% {
+        background: linear-gradient( #9356DC, #FF79DA);
+    }
+  }
 /*-------------------------------------*/
 /*-------------DISH INFO---------------*/
 /*-------------------------------------*/
@@ -70,6 +97,7 @@ main
 
 .dishType
 {
+    width: 100%;
     font-size: 16px;
     font-weight: 400;
     text-align: start;
@@ -118,7 +146,7 @@ hr
 }
 .card-price
 {
-    width: 30px;
+    width: 25%;
     font-size: 14px;
     font-weight: bold;
     text-align: end;
@@ -173,14 +201,14 @@ hr
     width: 23%;
     border-top-right-radius: 15px;
     transition: width 1.2s ease-in-out;
-    margin-left: 15px;
+    margin-left: 5%;
 }
 .detail-restaurant:hover .add-to-cart .fa-check-circle 
 {
     animation: transform 0.5 ease-in-out;
     margin: auto;
     animation: spin 1s linear 1;
-    padding: 20px 25px;
+    padding: 20px 40%;
     transform: scale(1);
 }
 
@@ -197,45 +225,18 @@ hr
     @media only screen 
     and (min-width : 375px) 
     and (max-width : 425px) {
-        .detail-restaurant:hover .add-to-cart .fa-check-circle 
-        {
-            padding: 20px 30px;
-        }
+
         .card-title { width: 195px;}
-        .detail-restaurant:hover .add-to-cart {
-            margin-left: 20px;
-        }
+
     }
 
     @media only screen 
     and (min-width : 425px) 
     and (max-width : 425px) {
-        .detail-restaurant:hover .add-to-cart .fa-check-circle 
-        {
-            padding: 20px 35px;
-        }
 
-        .card-price { width: 45px; text-align: end; padding-right: 10px;}
-        .detail-restaurant:hover .add-to-cart {
-            margin-left: 13px;
-        }
-    }
-    @media only screen 
-    and (min-width : 768px) 
-    and (max-width : 768px) {
-        .detail-restaurant:hover .add-to-cart .fa-check-circle 
-        {
-            padding: 20px 70px;
-        }
-        .card-title { width: 255px;}
 
-        .card-price { width: 85px ; text-align: end; padding-right: 10px;}
-        .detail-restaurant:hover .add-to-cart {
-            margin-left: 10px;
-        }
-        .dishType { margin-left: 40px; }
-        hr { margin-inline-start: 40px; }
     }
+
     
     
 

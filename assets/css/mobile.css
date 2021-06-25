@@ -10,7 +10,7 @@ body
 }
 
 .padded-left { padding-left: 15px;}
-
+.padded-right-l { padding-right: 20%; }
 .Logo, .title, #footer-title
 {
     font-family: 'Shrikhand', 'Roboto';
@@ -33,6 +33,7 @@ body
     position: absolute;
     animation: itemAppear 4s linear 1;
     animation-fill-mode: unset;
+    z-index: 10;
 }
 @keyframes itemAppear {
     0% {
@@ -57,7 +58,8 @@ body
     width: 80px;
     height: 80px;
     left: 35%;
-    top: 30%;
+    top: 35%;
+    z-index: 15;
 }
 .lds-dual-ring:before 
 {
@@ -157,7 +159,8 @@ header
 }
 #explorer-button:hover
 {
-    box-shadow: 0px 0px 11px 5px #878686
+    box-shadow: 0px 0px 11px 5px #878686;
+    background : linear-gradient(#fb89da ,#a87ddd);
 }
 #mainText
 {
@@ -254,7 +257,7 @@ header
     text-decoration: none;
     color: black;
 }
-#restaurant-title,
+#restaurant-title-main,
 .restaurants
 {
     width: 90%;
@@ -297,23 +300,54 @@ header
     margin: 10px 0 15px 5px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .detail-restaurant a { width: 76%;}
 
-.fa-heart {
-    background-color: #FFF;
-    color: white;
-    -webkit-text-stroke: 1px black;
+
+.card-heart-full
+{
+    background-clip: text!important;
+    -webkit-background-clip: text!important;
+    color: transparent;
+    right: 36px;
+    position: absolute;
+
 }
-.fa-heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;
+.card-heart-full:hover
+{
+    animation: colorHeart 1s ease-in;
+    animation-fill-mode: forwards;
+
 }
-.fa-heart:hover::before{
-    color: #FF79DA;
-    cursor: pointer;
+@keyframes colorHeart {
+    0% {
+        background: linear-gradient( #ddc9f6, #ffa5e6);
+    }
+    25% {
+        background: linear-gradient( #d9bff8, #f78dd9);
+    }
+    50% {
+        background: linear-gradient( #be8ff8, #f873d2);
+    }
+    75% {
+        background: linear-gradient( #b985f8, #f869d0);
+    }
+    100% {
+        background: linear-gradient( #9356DC, #FF79DA);
+    }
+  }
+  
+.card-heart
+{
+    right: 36px;
+    color: black; 
+    position: absolute;
 }
+.card-heart:hover{
+    display: none;
+}
+
 
 /*-------------------------
         Footer

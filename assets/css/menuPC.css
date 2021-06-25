@@ -1,13 +1,38 @@
 @media only screen 
-and (min-width : 1028px) {
-
+and (min-width : 1024px) {
+  
     .dish-card {
         width: 60%!important;
         border-radius: 15px;
         margin: 0 0 15px 0;
         font-size: 13.4px;
     }
+    .card-heart
+    {
+        position: absolute;
+        right: 24%!important;
+        top: 3%!important;
+    }
+    .card-heart-full
+    {
+        right: 24%!important;
+        top: 3%!important;
+    }
+    .card-heart-full:hover
+    {
+        animation: colorHeart 2s ease-in;
+        animation-fill-mode: forwards;
 
+    }
+@keyframes colorHeart {
+    0% {
+        background: linear-gradient( #ddc9f6, #fdbdeb);
+    }
+
+    100% {
+        background: linear-gradient( #9356DC, #FF79DA);
+    }
+  }
 
     .dishType
     {
@@ -23,7 +48,7 @@ and (min-width : 1028px) {
     }
     .card-title { width: 255px;}
 
-    .card-price { width: 95px!important ; text-align: end!important;}
+    .card-price { width: 30%!important ; padding-right: 10px;}
     .detail-restaurant:hover .add-to-cart {
         margin-left: 7%!important;
     }
