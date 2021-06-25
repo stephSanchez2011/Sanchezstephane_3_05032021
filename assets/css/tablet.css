@@ -12,8 +12,8 @@
 ---------------------------*/
         .lds-dual-ring 
         {
-            left: 48%!important;
-            top: 35%!important;
+            left: 48%;
+            top: 35%;
         }
 /*-------------------------
         First Section
@@ -78,6 +78,16 @@
             margin: 0px 30px 15px 30px!important;
         }
         .detail-restaurant a { width: 76%!important;}
+
+        .card-title { width: 255px;}
+        .card-price { width: 45px!important ; }
+        .detail-restaurant:hover .add-to-cart .fa-check-circle { padding: 20px 47%  !important; }
+        .detail-restaurant:hover .add-to-cart {
+            margin-left: 12%!important;
+        }
+        .dishType { margin-left: 5%!important; }
+        hr { margin-inline-start: 5%!important; }
+        
 /*-------------------------
         Footer
 ---------------------------*/
@@ -106,5 +116,11 @@
             text-align: center!important;
             margin-left: -10px;
         }
+        
+    }
+
+    @media only screen 
+    and (min-width : 1024px) 
+    and (max-width : 1024px) {
         
     }

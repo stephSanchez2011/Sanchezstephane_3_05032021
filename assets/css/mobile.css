@@ -298,7 +298,7 @@ header
     display: flex;
     align-items: center;
 }
-.detail-restaurant a { width: 76%!important;}
+.detail-restaurant a { width: 76%;}
 
 .fa-heart {
     background-color: #FFF;
@@ -323,7 +323,7 @@ footer
     display: flex;
     justify-content: center;
     align-items: inherit;
-    background-color: #353535!important;
+    background-color: #353535;
     min-height: 190px;
 }
 #footer
