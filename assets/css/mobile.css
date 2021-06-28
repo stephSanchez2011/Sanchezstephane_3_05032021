@@ -307,6 +307,7 @@ header
 
 .card-heart-full
 {
+    transform: scale(1.2);
     background-clip: text!important;
     -webkit-background-clip: text!important;
     color: transparent;

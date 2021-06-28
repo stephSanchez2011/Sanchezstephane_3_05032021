@@ -1,6 +1,6 @@
 @media only screen 
 and (min-width : 1024px) {
-  
+    body { background-size: 100%!important; }
     .dish-card {
         width: 60%!important;
         border-radius: 15px;
