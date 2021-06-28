@@ -132,7 +132,7 @@ header
 #main-section
 {
     
-    width: 100%px;
+    width: 100%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
