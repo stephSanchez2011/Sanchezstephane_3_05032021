@@ -282,7 +282,17 @@ header
     border-radius: 15px;
     margin: 0 0 15px 0;
 }
-
+.new-card
+{
+    position: absolute;
+    right: 5%;
+    top: -150px;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    color: green;
+    background-color: #99E2D0;
+}
 .card-info { width: 70%; }
 
 .restaurant-card img
